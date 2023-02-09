@@ -8,7 +8,7 @@ import Collection from './views/Collection';
 
 const Content = () => {
   return (
-    <div className='flex-auto'>
+    <div className='flex-auto overflow-y-scroll'>
        <Navbar />
 
        <Routes>

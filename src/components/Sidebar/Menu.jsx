@@ -10,7 +10,7 @@ const Menu = () => {
 
         <li>
           <NavLink
-            activeClassName="bg-active text-white"
+            activeClassName="bg-active"
             exact
             to="/"
             className="h-10 flex items-center font-sm font-semibold text-link hover:text-white  px-4 rounded gap-x-4"
@@ -22,7 +22,7 @@ const Menu = () => {
 
         <li>
           <NavLink
-            activeClassName="bg-active text-white"
+            activeClassName="bg-active"
             to="/search"
             className="h-10 flex items-center font-sm font-semibold text-link hover:text-white rounded px-4 gap-x-4"
           >
@@ -33,7 +33,7 @@ const Menu = () => {
 
         <li>
           <NavLink
-            activeClassName="bg-active text-white"
+            activeClassName="bg-active"
             to="/collection"
             className="h-10 flex items-center font-sm font-semibold text-link hover:text-white rounded px-4 gap-x-4"
           >
