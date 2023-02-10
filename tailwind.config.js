@@ -15,8 +15,9 @@ module.exports = {
     },
     fontSize:{
       s:"0.813rem"
-    }
-  },
+    },
+  }
+  ,
   plugins: [
     require('@tailwindcss/line-clamp'),
   ],

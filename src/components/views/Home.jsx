@@ -1,5 +1,6 @@
 import React from 'react'
 import Section from 'components/Section/Section'
+import Books from 'components/Section/Books'
 
 const Home = () => {
 
@@ -10,7 +11,7 @@ const Home = () => {
     title:"sınav haftası beni hayatta tutan şarkılar",
     artist:"Cakal",
     description:"gönül isterdi ki böyle olmasın ama zaten bu gönlün istediği çoğu şey olmuyor",
-    src:"https://cdn.freesound.org/previews/673/673440_1531809-lq.mp3"
+    src:"../auidos/ArasanDa.mp3"
   },
   {
     id:2,
@@ -46,8 +47,65 @@ const Home = () => {
   },
 
 ]
+
+const collection = [
+  {
+  id:1,
+  image:"https://i.scdn.co/image/ab67706c0000da840f228b46f3dacd114c814235",
+  title:"sınav haftası beni hayatta tutan şarkılar",
+  artist:"Cakal",
+  description:"gönül isterdi ki böyle olmasın ama zaten bu gönlün istediği çoğu şey olmuyor",
+  src:"../auidos/ArasanDa.mp3"
+},
+{
+  id:2,
+  image:"https://i.scdn.co/image/ab67706c0000da84d923e77191cfea3322b4f0a6",
+  title:"gelecek kaygısı çekerken ağlayarak sınava hazırlandığımda dinlediğim şarkılar",
+  artist:"Uzi",
+  description:"Oluşturan: mehri'",
+  src:"https://cdn.freesound.org/previews/673/673405_321967-lq.mp3"
+},
+{
+  id:3,
+  image:"https://seed-mix-image.spotifycdn.com/v6/img/artist/6CPZWzcKiOKkHn4L2XI4i2/tr/default",
+  title:"ARABADA YANLAMALIK 🔥",
+  artist:"Stabil",
+  description:"Oluşturan: Burakcan23",
+  src:"https://cdn.freesound.org/previews/673/673406_9034501-lq.mp3"
+},
+{
+  id:4,
+  image:"https://i.scdn.co/image/ab67706c0000da84d168daa5e3dd6a927cb7396b",
+  title:"sinir krizi geçirirken dinlediğim",
+  artist:"Uziii",
+  description:"Oluşturan: a",
+  src:"https://cdn.freesound.org/previews/673/673439_2061858-lq.mp3"
+},
+{
+  id:5,
+  image:"https://mosaic.scdn.co/300/ab67616d00001e0220d33811223d495047b0368eab67616d00001e02438198f2165a7954bcfd9b81ab67616d00001e02a39ebb26fde6bc3638c7c2d6ab67616d00001e02e3e1fb79014ebc3e246885ed",
+  title:"Sınava giderken bıkana kadar dinlediklerim",
+  artist:"Gunes",
+  description:"Oluşturan: Ervanur",
+  src:"https://cdn.freesound.org/previews/673/673338_1089955-lq.mp3"
+},
+
+{
+  id:6,
+  image:"https://mosaic.scdn.co/300/ab67616d00001e0220d33811223d495047b0368eab67616d00001e02438198f2165a7954bcfd9b81ab67616d00001e02a39ebb26fde6bc3638c7c2d6ab67616d00001e02e3e1fb79014ebc3e246885ed",
+  title:"Sınava giderken bıkana kadar dinlediklerim",
+  artist:"Gunes",
+  description:"Oluşturan: Ervanur",
+  src:"https://cdn.freesound.org/previews/673/673338_1089955-lq.mp3"
+}
+
+]
   return (
     <div>
+<Books 
+title="Gunoooo"
+collection={collection}/>
+
       <Section 
       title="En çok dinlediğin mix'ler"
       items={items}/>

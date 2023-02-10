@@ -35,7 +35,7 @@ const updateCurrent = () => {
         {(current?.id === item.id && playing) ? <BsPauseFill size={20} color={"#fff"}/> : <BsFillPlayFill size={20} color={"#fff"}/>}
       </span>
      </button>
-    </div>s
+    </div>
       
      <h6 className='pt-2 line-clamp-1 font-bold'> {item.title}</h6>
      <p className='pt-2 text-link line-clamp-2'>{item.description}</p>

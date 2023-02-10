@@ -9,7 +9,7 @@ const Account = () => {
     avatar:"https://res.cloudinary.com/dreqpija0/image/upload/v1671307695/Portfolio/CVPhoto_s84t0w.png"
    } 
   return (
-    <Menu as="nav" className="relative">
+    <Menu as="nav" className="relative z-10">
     {({open})=>(
       <>
       <Menu.Button className={`flex gap-x-2 items-center ${open && "bg-backdrop"}`}>
