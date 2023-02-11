@@ -1,0 +1,43 @@
+[
+    {
+    "id":1,
+    "image":"https://i.scdn.co/image/ab67616d00001e02e2161dffafcd309995527ced",
+    "title":"Arasanda",
+    "artist":"Uzi",
+    "description":"gönül isterdi ki böyle olmasın ama zaten bu gönlün istediği çoğu şey olmuyor",
+    "src":"https://res.cloudinary.com/dreqpija0/video/upload/v1676135129/Spotify%20Musics/mp3indirdur-Uzi-Arasan-Da_dojczk.mp3"
+  },
+  {
+    "id":2,
+    "image":"https://i.scdn.co/image/ab67616d00001e02687926268cf19712bf89fb37",
+    "title":"Sabah Olmaz",
+    "artist":"Agoni",
+    "description":"-",
+    "src":"https://res.cloudinary.com/dreqpija0/video/upload/v1676135205/Spotify%20Musics/mp3indirdur-Agoni-Sabah-Olmaz_cs4len.mp3"
+  },
+  {
+    "id":3,
+    "image":"https://i.scdn.co/image/ab67616d00001e0275df7480a73f3f77acc2ec7d",
+    "title":"Kim Bilir",
+    "artist":"Ceza",
+    "description":"-",
+    "src":"https://res.cloudinary.com/dreqpija0/video/upload/v1676136454/Spotify%20Musics/mp3indirdur-Ceza-Kim-Bilir_pyk8hd.mp3"
+  },
+  {
+    "id":4,
+    "image":"https://i.scdn.co/image/ab67616d00001e020c4658b30c81b17be310972e",
+    "title":"Taboo",
+    "artist":"Okaber",
+    "description":"-",
+    "src":"https://res.cloudinary.com/dreqpija0/video/upload/v1676136467/Spotify%20Musics/Okaber_-_TABOO_Replay.Az_v4lteq.mp3"
+  },
+  {
+    "id":5,
+    "image":"https://i.scdn.co/image/ab67616d00001e029b6cd365d38496b580026989",
+    "title":"Ölü",
+    "artist":"Contra",
+    "description":"-",
+    "src":"https://res.cloudinary.com/dreqpija0/video/upload/v1676136437/Spotify%20Musics/mp3indirdur-Contra-Olu_y9g9o5.mp3"
+  }
+
+]

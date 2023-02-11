@@ -1,9 +1,13 @@
 import React from 'react'
+import Books from 'components/Section/Books'
+import collections from 'data/Collections'
 
 const Collection = () => {
   return (
     <div>
-      Kitaplik sayfasi
+     <Books 
+title="Gunoooo"
+collection={collections}/>
     </div>
   )
 }

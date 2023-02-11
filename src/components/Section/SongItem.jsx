@@ -25,7 +25,7 @@ const updateCurrent = () => {
 // const isCurrentItem = () => (current?.id === item.id && playing)
 
   return (
-    <div className='m-2 p-4 bg-backdrop rounded-md hover:scale-95 transition-all group'>
+    <div className='m-2 p-4 bg-[#242424] hover:bg-[#2a2a2a] transition-all ease-in rounded-md group'>
     <div className='relative'>
       <img src={item.image} alt="" />
       <button 
@@ -37,8 +37,8 @@ const updateCurrent = () => {
      </button>
     </div>
       
-     <h6 className='pt-2 line-clamp-1 font-bold'> {item.title}</h6>
-     <p className='pt-2 text-link line-clamp-2'>{item.description}</p>
+     <h6 className='pt-2 line-clamp-1 font-bold text-[1.2rem]'> {item.title}</h6>
+     <p className='pt-2 text-link line-clamp-2 font-semibold'>{item.artist}</p>
   </div>
   )
 }

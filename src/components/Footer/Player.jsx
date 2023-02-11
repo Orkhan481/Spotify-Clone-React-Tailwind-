@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useEffect, useMemo, useState, useRef } from "react";
 import { BsShuffle } from "react-icons/bs";
 import { GiPreviousButton } from "react-icons/gi";
 import { GiNextButton, GiPauseButton } from "react-icons/gi";
@@ -18,13 +18,19 @@ import { AiOutlineFullscreen, AiOutlineHeart ,AiOutlineUp } from "react-icons/ai
 import {BiWindows} from 'react-icons/bi'
 import {IoChevronUpOutline} from 'react-icons/io'
 
-import { useAudio } from "react-use";
+import { useAudio, useFullscreen, useToggle } from "react-use";
 import CustomRange from "./CustomRange";
 import { useDispatch, useSelector } from "react-redux";
 
 import { setControls, setPlaying, setSidebar } from "stores/player";
+import FullScreen from "components/FullScreen";
 
 const Player = () => {
+
+  const fsref = useRef()
+  const [show, toggle] = useToggle(false);
+  const isFullscreen = useFullscreen(fsref, show, {onClose: () => toggle(false)});
+
   const dispatch = useDispatch();
   const { current, sidebar } = useSelector((state) => state.player);
 
@@ -155,9 +161,21 @@ const Player = () => {
             onChange={(value) => controls.volume(value)}
           />
         </div>
-        <button className="w-8 h-8 flex items-center justify-center text-white text-opacity-70 hover:text-opacity-100">
+        <button 
+        onClick={toggle}
+        className="w-8 h-8 flex items-center justify-center text-white text-opacity-70 hover:text-opacity-100">
           <AiOutlineFullscreen size={20} />
         </button>
+      </div>
+
+      <div ref={fsref}>
+          {isFullscreen && (
+            <FullScreen 
+            state={state}
+            controls={controls}
+            toggle={toggle}
+            />
+          )}
       </div>
     </div>
   );
